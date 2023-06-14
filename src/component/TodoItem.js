@@ -5,7 +5,7 @@ import './scss/TodoItem.scss';
 import cn from 'classnames';
 
 
-const TodoItem = ({ item }) => {
+const TodoItem = ({ item, remove }) => {
 
   const {id, title, done} = item;
 
@@ -15,7 +15,7 @@ const TodoItem = ({ item }) => {
           {done && <MdDone />}  
       </div>
       <span className={cn('text', {finish: done})}>{title}</span>
-      <div className='remove'>
+      <div className='remove' onClick={() => remove(id)}>
           <MdDeleteOutline />
       </div>
     </li>
