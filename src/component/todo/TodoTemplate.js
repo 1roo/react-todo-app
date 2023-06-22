@@ -139,7 +139,7 @@ const TodoTemplate = () => {
 
   useEffect(() => {
 
-    //페이지가 렌더링 됨가 동시에 할 일 목록을 요청해서 뿌려준다.
+    //페이지가 렌더링 됨과 동시에 할 일 목록을 요청해서 뿌려준다.
     fetch(API_BASE_URL)
       .then(res => res.json())
       .then(json => {
