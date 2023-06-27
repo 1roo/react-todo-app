@@ -2,7 +2,6 @@
 //변수 선언
 $my-dark-gray: #343a40;
 
-
 header {
     padding: 48px 32px 24px;
     border-bottom: 1px solid #bbb;
@@ -24,7 +23,21 @@ header {
         margin-top: 40px;
         font-weight: 700;
     }
+    .promote {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 20px;
+        top: 50px;
+        width: 150px;
+        height: 40px;
+        font-size: 1.2em;
+        font-weight: 700;
+        &.bg-warning {
+            cursor: pointer;
+        }
+    }
 
 }
-
 

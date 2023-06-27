@@ -6,16 +6,16 @@
     position: relative;
     background: #fff;
     border-radius: 16px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-
+    box-shadow: 0 0 8px rgba(0, 0, 0 ,0.4);
 
     //페이지 중앙 정렬
-    margin: 250px auto 100px;
-   
+    margin: 200px auto 32px;
 
     display: flex;
     flex-direction: column;
+
 }
+
 
 .loading {
     position: absolute;
@@ -30,3 +30,5 @@
     }
 
 }
+
+
