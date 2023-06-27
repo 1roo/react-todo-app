@@ -9,7 +9,7 @@ const TodoTemplate = () => {
 
 
   //서버에 할 일 목록(json)을 요청(fetch)해서 받아와야 함.
-  const API_BASE_URL = 'http://localhost:8181/api/todos';
+  const API_BASE_URL = BASE + TODO;
 
   //todos 배열을 상태 관리
    const [todos, setTodos] = useState([]);
