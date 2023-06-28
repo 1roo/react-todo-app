@@ -234,6 +234,16 @@ const TodoTemplate = () => {
     </>
   );
 
+    // 로딩 중일 때 보여줄 컴포넌트
+    const loadingPage = (
+      <div className='loading'>
+        <Spinner color='danger'>
+          loading...
+        </Spinner>
+      </div>
+    );
+  
+
   return (
     <div className='TodoTemplate'>
       { loading ? loadingPage : loadEndedPage }
